@@ -11,7 +11,6 @@ const CaptainSignup = () => {
     const [lastname, setLastname] = useState('')
     const [userData, setUserData] = useState({})
 
-
     const [vehicleColor, setVehicleColor] = useState('')
     const [vehiclePlate, setVehiclePlate] = useState('')
     const [vehicleCapacity, setVehicleCapacity] = useState('')
@@ -105,7 +104,7 @@ const CaptainSignup = () => {
                             required
                             value={vehicleType}
                             onChange={(e) => { setVehicleType(e.target.value) }}
-                            className="p-5 outline-none w-full bg-gray-200 font-normal rounded py-2 text-[18px]" name="VehicleType" placeholder="Vehicle Type" required >
+                            className="p-5 outline-none w-full bg-gray-200 font-normal rounded py-2 text-[18px]" name="VehicleType" placeholder="Vehicle Type" >
                                 <option value="" disabled>Select Vehicle Type</option>
                                 <option value="car">car</option>
                                 <option value="auto">auto</option>
